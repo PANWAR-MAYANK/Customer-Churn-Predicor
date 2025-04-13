@@ -1,8 +1,6 @@
 # **Customer Churn Prediction with Machine Learning 📊📉**
 
-This repository showcases a comprehensive project aimed at predicting customer churn for a telecom company using various machine learning techniques. The goal is to develop an effective model to predict which customers are likely to leave (churn) based on their interactions with the company, enabling businesses to take proactive measures.
 
----
 
 ## **Project Overview 📝**
 
