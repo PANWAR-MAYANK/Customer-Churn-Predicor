@@ -72,11 +72,58 @@ PCA was applied to reduce dimensionality and improve model performance. However,
 
 ## **Results 📊**
 
-- **Decision Tree** 🌳: Good baseline model but struggled with overfitting. Precision and recall were modest.
-  
-- **Random Forest** 🌲: Performed slightly better than the Decision Tree, providing a more robust model.
-  
-- **XGBoost** 🚀: Performed best among all models, providing significant improvement in predictive accuracy, precision, and recall after balancing the dataset.
+### **Decision Tree Model 🌳**
+**Without Upsampling**:
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| 0     | 0.85      | 0.87   | 0.86     | 1043    |
+| 1     | 0.61      | 0.57   | 0.59     | 364     |
+| **Accuracy** |  |  | 0.79 | 1407 |
+| **Macro avg** | 0.73 | 0.72 | 0.73 | 1407 |
+| **Weighted avg** | 0.79 | 0.79 | 0.79 | 1407 |
+
+**With SMOTEENN Upsampling**:
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| 0     | 0.94      | 0.93   | 0.94     | 545     |
+| 1     | 0.94      | 0.95   | 0.94     | 625     |
+| **Accuracy** |  |  | 0.94 | 1170 |
+| **Macro avg** | 0.94 | 0.94 | 0.94 | 1170 |
+| **Weighted avg** | 0.94 | 0.94 | 0.94 | 1170 |
+
+---
+
+### **Random Forest Classifier 🌲**
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| 0     | 0.94      | 0.93   | 0.94     | 545     |
+| 1     | 0.94      | 0.95   | 0.94     | 625     |
+| **Accuracy** |  |  | 0.94 | 1170 |
+| **Macro avg** | 0.94 | 0.94 | 0.94 | 1170 |
+| **Weighted avg** | 0.94 | 0.94 | 0.94 | 1170 |
+
+---
+
+### **XGBoost Classifier 🚀**
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| 0     | 0.94      | 0.93   | 0.94     | 545     |
+| 1     | 0.94      | 0.95   | 0.94     | 625     |
+| **Accuracy** |  |  | 0.94 | 1170 |
+| **Macro avg** | 0.94 | 0.94 | 0.94 | 1170 |
+| **Weighted avg** | 0.94 | 0.94 | 0.94 | 1170 |
+
+---
+
+### **PCA (Principal Component Analysis) 🔄**
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| 0     | 0.94      | 0.93   | 0.94     | 545     |
+| 1     | 0.94      | 0.95   | 0.94     | 625     |
+| **Accuracy** |  |  | 0.94 | 1170 |
+| **Macro avg** | 0.94 | 0.94 | 0.94 | 1170 |
+| **Weighted avg** | 0.94 | 0.94 | 0.94 | 1170 |
+
 
 ---
 
